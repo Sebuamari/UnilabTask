@@ -1,0 +1,241 @@
+/* header style */
+.header-container{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-container .menu-icon {
+    display: none;
+    margin-left: 5%;
+}
+.header-container .right-side{
+    display: flex;
+    flex-direction: row;
+    min-width: 300px;
+}
+.header-container .left-side{
+    margin-left: 3%;
+}
+.right-side .menu {
+    width: 300px;
+    margin-top: 6px;
+}
+.right-side .profile-img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 5%;
+}
+/* animation */
+@keyframes slideIn {
+    0% {
+      width: 0%;
+      opacity: 0;
+    }
+    100% {
+      width: 50%;
+      opacity: 1;
+    }
+}
+/* menu style */
+body .burger-menu{
+    display: none;
+    top: 0;
+    width:287px;
+    height:812px;
+    background-color: #fffff9;
+    box-shadow: 0px 60px 300px 20px rgba(0,0,0,0.6);
+    transition:  3s;
+    animation: slideIn 0.6s cubic-bezier(.62,.04,.3,1.56);
+}
+.header-container .menu-icon:hover{
+    cursor: pointer;
+    transform: scale(1.5);
+}
+.burger-menu .burger-menu-navigation{
+    padding-left: 40px;
+    margin-top: 60px;
+    height: 502px;
+}
+.burger-menu-navigation .logo{
+    margin-top: 20%;
+}
+.burger-menu-navigation .menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 40%;
+    height: 40%;
+}
+.menu .profile-img-overlay{
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+    margin-right: 16%;
+}
+.menu a img{
+    margin-right: 20%;
+}
+/* footer style */
+.menu-footer{
+    width: 100%;
+    height: 310px;
+    background-color: gray;
+}
+.menu-footer .footer-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 20%;
+}
+.footer-container .footer-left-side,
+.footer-container .footer-right-side{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.footer-left-side div,
+.footer-right-side  div{
+    margin-bottom: 20%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 11px;
+    color:#fffff9;
+}
+.menu-footer .socials{
+    margin-top: 40px;
+    margin-left: 20%;
+}
+.socials img{
+    margin-left: 10%;
+    max-width: 16px;
+    max-height: 16px;
+}
+.footer-list-item div{
+    color: #fffff9;
+    margin-bottom: 10px;
+}
+footer{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    background-color: grey;
+}
+footer .sub-social{
+    width: 580px;
+    margin-left: 10%;
+}
+.sub-social .socials{
+    width: 160px;
+    margin-top: 60px;
+    margin-right: 5%;
+}
+.sub-social,
+.sub-social .socials{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+footer .footer-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 30%;
+    height: 82px;
+    margin-top: 40px;
+    margin-left: 10%;
+}
+.footer-nav .footer-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 360px;
+}
+.footer-list .footer-list-item{
+    display: flex;
+    flex-direction: column;
+    margin-right: 10%;
+}
+/* container style */
+body .container{
+    width: 100%;
+    height: 2150px;
+}
+.container .inner-container{
+    height: 1400px;
+    margin: 75px auto;
+}
+.sub-social .subscribe{
+    width: 50%;
+    height: 65px;
+    margin-top: 40px;
+}
+.subscribe .email-input{
+    background: transparent;
+    width: 100%;
+    height: 30px;
+    border: 1px #fffff9 solid;
+}
+.subscribe img{
+    margin-left: -30px;
+}
+@media only screen and (max-width:1339px){
+    body{
+        height: 2923px;
+    }
+    body .container{
+        height: 2557px;
+    }
+    footer{
+        height: 316px;
+        flex-direction: column;
+    }
+    footer .footer-nav{
+        width: 90%;
+        margin: 5% auto;
+        justify-content: space-between;
+    }
+    .footer-logo{
+        margin-right: 100px;
+    }
+    footer .sub-social{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .subscribe{
+        width: 284px;
+    }
+    .socials{
+        width: 170px;
+        margin-top:10%;
+        margin-left: 20%;
+    }
+}
+@media only screen and (max-width:786px){
+    body .container{
+        height: 3272px;
+    }
+    #profile-img{
+        display:block;
+    }
+    .header-container .menu-icon{
+        display: block;
+        margin-left: 20px;
+    }
+    .header-container .right-side{
+        min-width: 30px;
+    }
+    .right-side .menu{
+        display: none;
+    }
+    .right-side .profile-img{
+        margin-right: 20px;
+    }
+    footer{
+        display: none;
+    }
+}

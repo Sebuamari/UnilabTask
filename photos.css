@@ -1,0 +1,43 @@
+@keyframes slideIn {
+    0% {
+      width: 0%;
+      opacity: 0;
+    }
+    100% {
+      width: 100%;
+      opacity: 1;
+    }
+}
+body{
+    animation: slideIn 0.8s cubic-bezier(.32,.3,.68,.68);
+}
+.container{
+    display: flex;
+    flex-direction: column;
+}
+.container .title{
+    height: 150px;
+}
+.title h1{
+    font-size: 34px;
+    color:brown;
+    text-align: center;
+    margin: 30px;
+}
+.title a{
+    margin-left: 25%;
+}
+a button {
+    width:50%;
+    height: 40px;
+    border: none;
+    color:brown;
+    background-color: antiquewhite;
+}
+.photos{
+    margin: 0 auto;
+}
+.photos img{
+    max-width: 800px;
+    max-height: 500px;
+}

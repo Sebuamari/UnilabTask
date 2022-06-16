@@ -1,0 +1,298 @@
+body{
+    max-width: 1440px;
+    height:2400px;
+    background-color: #F6F8F9;
+}
+/* container style */
+.container .news{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 600px;
+}
+.news .world-news{
+    width: 840px;
+    height: 100%;
+    background-image: url("img/road.png");
+    background-repeat: no-repeat;
+}
+.world-news .world-news-info{
+    width: 600px;
+    height: 247px;
+    margin: auto;
+    margin-top: 25%;
+}
+.news .more-news{
+    width: 600px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+}
+.more-news .more-news-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 380px;
+    height: 400px;
+    margin: auto;
+}
+.more-news-title .nav-arrows{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 50px;
+    height: 10px;
+}
+.nav-arrows img{
+    width: 6px;
+    height: 10px;
+}
+.more-news-content .news-items{
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.news-items .article-info,
+.trending-content-item .article-info{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 160px;
+}
+.article-info .article-timing{
+    display: flex;
+    flex-direction: row;
+}
+.inner-container .trending{
+    width: 80%;
+    height: 410px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.trending .trending-title{
+    height: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.trending-title .trending-nav,
+.happening-now .happening-now-nav{
+    width: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.trending .trending-content{
+    height: 350px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.trending-content .trending-content-item{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.trending-content-item .item-image{
+    width: 100%;
+    border-radius: 5%;
+}
+.inner-container .happening-now{
+    width: 80%;
+    height: 950px;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.happening-now .happening-now-content,
+.happening-now .happening-now-title{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.happening-now-item .article-timing{
+    margin: 10px 0;
+    display: flex;
+    flex-direction: row;
+}
+.article-timing img{
+    margin-right: 20px;
+}
+.happening-now-content .left-side,
+.happening-now-content .right-side{
+    height: 900px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.happening-now-content .left-side{
+    width: 65%;
+}
+.happening-now-content .right-side{
+    width: 30%;
+}
+.left-side .happening-now-item{
+    width: 60%;
+    height: 430px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.happening-now-item div{
+    width: 90%;
+    margin: auto;
+}
+.happening-now-item .item-info{
+    height: 102px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.left-side .item-up,
+.left-side .item-down{
+    background-image:url(img/bridge.png); 
+    background-repeat:no-repeat; 
+    width:100%; 
+    height: 100%;
+    border-radius:5%;
+}
+.left-side .item-down{
+    background-image:url(img/forest.png); 
+}
+.right-side .happening-now-content-item{
+    height: 250px;
+}
+.happening-now-content-item .item-image{
+    width: 100%;
+}
+.happening-now-content-item .article-info{
+    margin-top: 15px;
+}
+/* media queries */
+@media only screen and (max-width:1339px){
+    body{
+        height: 2923px;
+    }
+    .inner-container .happening-now{
+        height: 1242px;
+    }
+    .happening-now .happening-now-content{
+        height: 1180px;
+        flex-direction: column;
+    }
+    .happening-now-content .left-side{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .happening-now-content .right-side{
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        height: 242px;
+    }
+    .left-side .happening-now-item{
+        width: 100%;
+        background-size: 100% 420px;
+    }
+    .happening-now-content .third-item{
+        display: none;
+    }
+    .right-side .happening-now-content-item{
+        width: 40%;
+    }
+    .container .news{
+        flex-direction: column;
+        width: 100%;
+        height: 743px;
+    }
+    .news .world-news{
+        width: 100%;
+        height: 400px;
+        background-size: 100% 400px;
+    }
+    .world-news .world-news-info{
+        width: 80%;
+        margin-top: 75px;
+    }
+    .news .more-news{
+        width: 100%;
+        height: 478px;
+    }
+    .more-news .more-news-content{
+        height: 200px;
+        width: 80%;
+    }
+    .more-news-content .news-items{
+        flex-direction: row;
+    }
+    .inner-container .trending{
+        height: 412px;
+    }
+}
+@media only screen and (max-width:786px){
+    body{
+        min-width: 376px;
+        height:3360px;
+    }
+    .inner-container .happening-now{
+        height: 1600px;
+    }
+    .happening-now .happening-now-content {
+        width: 80%;
+        margin: auto;
+    }
+    .happening-now-content .left-side{
+        height: 940px;
+    }
+    .happening-now-content .right-side{
+        height: 806px;
+        margin-top: 60px;
+        flex-direction: column;
+    }
+    .happening-now-content .third-item{
+        display: block;
+    }
+    .left-side .happening-now-item{
+        height: 300px;
+        margin-bottom: 20px;
+    }
+    .right-side .happening-now-content-item{
+        width: 100%;
+        height: 70%;
+        margin-bottom: 20px;
+    }
+    .container .news{
+        width: 100%;
+        height: 866px;
+    }
+    .world-news .world-news-info{
+        width: 90%;
+    }
+    .more-news .more-news-content{
+        height: 390px;
+        width: 90%;
+    }
+    .inner-container .trending{
+        height: 716px;
+    }
+    .trending .trending-content{
+        height: 656px;
+        flex-direction: column;
+    }
+    .trending-content .trending-content-item{
+        width: 80%;
+        margin: auto;
+    }
+    .trending-content .third-item{
+        display: none;
+    }
+    .trending-content-item .item-image{
+        height: 154px;
+    }
+}
